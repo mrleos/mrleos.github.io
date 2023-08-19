@@ -26,6 +26,9 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick-1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick-1.8.1/slick/slick-theme.css"/>
+  
 
   <!-- =======================================================
   * Template Name: iPortfolio
@@ -136,42 +139,14 @@
           <p>This is some skills I have</p>
         </div>
 
-        <div class="row skills-content">
-
-          <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">HTML</span>
-            </div>
-
-            <div class="progress">
-              <span class="skill">CSS</span>
-            </div>
-              
-            <div class="progress">
-              <span class="skill">JavaScript</span>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">PHP</span>
-            </div>
-
-            <div class="progress">
-              <span class="skill">WordPress/CMS</span>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Photoshop</span>
-            </div>
-
-          </div>
-
+        <div class="listSkills">
+          <div>HTML</div>
+          <div>CSS</div>
+          <div>JAVASCRIPT</div>
+          <div>MSQL</div>
+          <div>PHP</div>
+          <div>PYTHON</div>
         </div>
-
       </div>
     </section><!-- End Skills Section -->
 
@@ -516,7 +491,18 @@
 	// ]]>
 </script>
 
-
+<script src="jquery-3.7.0.min.js"></script>
+<script src="slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.listSkills').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
+  });
+</script>
 </body>
 
 </html>
